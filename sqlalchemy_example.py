@@ -13,7 +13,7 @@ from sqlalchemy.ext.asyncio import create_async_engine
 from sqlalchemy.ext.declarative import as_declarative, declared_attr
 from sqlalchemy.orm import sessionmaker
 
-DB_DSN = "postgresql+asyncpg://admin:123456@localhost:5432/db_example2"
+DB_DSN = "postgresql+asyncpg://admin:123456@localhost:5432/db_example"
 
 
 def camelcase_to_snakecase(value):
