@@ -61,7 +61,7 @@ def get_engine():
 
 
 def get_session():
-    DBSession = sessionmaker(expire_on_commit=False, class_=AsyncSession)
+    DBSession = sessionmaker(class_=AsyncSession)
     DBSession.configure(binds={
         ExampleModel: get_engine(),
     })
